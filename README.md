@@ -46,13 +46,15 @@ Olhando para os blocos que você usou para resolver o jogo no nível 10, imagine
 
 ## 3. Estratégia Utilizada
 *Explique com suas palavras como você resolveu o problema. Qual foi a lógica?*
-> Escreva aqui... Exemplo: Percebi que o padrão se repetia 3 vezes, então criei um bloco de função para desenhar a ponta da estrela e usei um loop...
+Criei uma função que desenha as 3 estrelas amarelas com base em um laço de repetição, dentro desse há outro loop (principal), que repete 5 vezes movendo o cursor 50 unidades para frente e gira 144° graus à direita, formando cada estrela.
+Depois a caneta se levanta, se move para a esquerda e abaixa, desenhando lua completa (branca), movendo para frente e para trás, 50 unidades cada, 1º grau à direita (através de outro loop de repetição). Logo após, muda a caneta para a cor preta, forma a lua crescente ao momento que se move apagando parte da lua branca, indo e voltando 50 unidades primeiro para a direita em 90° graus e depois à esquerda, também a 90° graus.
+
 
 ## 4. Desafio:
-**A)** Escreva aqui...
+**A)** Foram necessárias 6 repetições no loop principal em 60° graus à direita a cada movimentação em 20 unidades.
   
-**B)** Escreva aqui...
+**B)** O ângulo de giro deve ser 90° graus para que os 4 fiquem distribuídos em um padrão circular.
   
-**C)** Escreva aqui...
+**C)** Levando em conta que a soma dos giros completa um círculo (360° graus). Dividi esses 360 por 6 (número de lados do hexágono), que deram 60° graus. E o ângulo de giros com base na quantidade de hexágonos que precisariam estar dispostos na posição circular, sendo assim, 360/4  = 90° graus.
 
 ---
